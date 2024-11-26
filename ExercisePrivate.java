@@ -3,10 +3,10 @@ public class ExercisePrivate {
 // String name
 // double height
 // double weight
-    private int age=20;
-    private String name="tt";
-    private double height=1.55;
-    private double weight=48;
+    private int age;
+    private String name;
+    private double height;
+    private double weight;
 
     public ExercisePrivate(int age, String name,double height,double weight){
         this.age=age;
@@ -16,7 +16,8 @@ public class ExercisePrivate {
     }
 
     public void displayDetails(){
-        System.out.println(age+name+height+weight);
+        double bmi = weight/height +age;
+        System.out.println(bmi);
     }
 
     public static void main(String[] args) {
