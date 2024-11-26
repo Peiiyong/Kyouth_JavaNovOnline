@@ -16,7 +16,7 @@ public class ExercisePrivate {
     }
 
     public void displayDetails(){
-        double bmi = weight/height +age;
+        double bmi = weight/(height +age);
         System.out.println(bmi);
     }
 
