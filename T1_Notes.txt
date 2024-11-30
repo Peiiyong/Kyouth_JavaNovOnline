@@ -1,0 +1,43 @@
+1. Repository in Github
+    git init
+    git remote add origin git@github.com:Peiiyong/JavaNovOnline.git
+    git branch -M main
+    git add .
+    git commit -m "This is the first commit"
+    git push -u origin main
+
+2. run the code:
+    javac .\Person.java
+    java Person
+
+3. clone github repository
+    git clone <ssh/https> 
+or download zip folder
+
+4. get the code that changed by others
+git pull
+
+5. dictionary
+() Paranteses
+{} Curly bracket
+[] bracket
+"" Double quotation
+'' single quotation
+/ slash
+# hash
+$ dollar sign 
+. dot
+: colon
+; semi colon
+
+6. Generate a New SSH Key and Add it to GitHub
+    ssh-keygen -t rsa
+    cat C:\Users\PY/.ssh/id_rsa.pub
+github: settings > ssh > input ssh key
+    ssh -T git@github.com 
+//output: Hi Peiiyong! You've successfully authenticated, but GitHub does not provide shell access.
+
+ssh key:
+1. 使用 SSH 密钥后，每次与 GitHub 交互（如 git pull 或 git push），
+   您不需要输入用户名和密码，而是通过私钥验证身份。这使得操作更加高效。
+2. SSH 使用加密协议确保数据在传输过程中的安全性，防止中间人攻击和数据泄露。

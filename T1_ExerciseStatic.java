@@ -1,4 +1,4 @@
-public class ExerciseStatic {
+public class T1_ExerciseStatic {
 
     static String name= "TAN";
     static int age = 20;
@@ -8,7 +8,7 @@ public class ExerciseStatic {
         System.out.println("The student name is: "+ name + " ,age is "+age +" and height is "+height);
     }
     public static void main(String[] args) {
-        ExerciseStatic exercise = new ExerciseStatic();
+        T1_ExerciseStatic exercise = new T1_ExerciseStatic();
         exercise.showDetails();
     }
 }
