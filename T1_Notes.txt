@@ -24,11 +24,15 @@ git pull
 "" Double quotation
 '' single quotation
 / slash
+// double slash
+* astrix
 # hash
+\ 
 $ dollar sign 
 . dot
 : colon
 ; semi colon
+@ at || atsigned
 
 6. Generate a New SSH Key and Add it to GitHub
     ssh-keygen -t rsa

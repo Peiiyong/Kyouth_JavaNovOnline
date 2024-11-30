@@ -11,6 +11,7 @@ public class T2_Exercise21 {
         private String model;
         private String make;
         private double price;
+        //private double[]carPrice = new double[3];
 
         public Car(String model, String make, double price) {
             this.model = model;
@@ -52,8 +53,7 @@ public class T2_Exercise21 {
         String make = scanner.nextLine();
         System.out.println("Enter car price:");
         double price = scanner.nextDouble();
-        scanner.nextLine(); // consume the newline character
+        scanner.nextLine(); // consume the newline character , Without this line: will jump to "make" for the next loop
         return new Car(model, make, price);
     }
-
 }

@@ -31,10 +31,17 @@ public class T2_Exercise22 {
         double averagePrice = (car1.getPrice() + car2.getPrice() + car3.getPrice()) / 3;
         System.out.println("The average price of the cars is: " + averagePrice);
         
-        // String result = (num > 0) ? "positive" : "negative";
-        String result = (averagePrice >= 100000) ? "Expensive" : 
-                        (averagePrice >= 50000 && averagePrice <= 99999) ? "Normal" :
-                        "Cheap";
+        // Ternary Operator
+        //String result = (num > 0) ? "positive" : "negative";
+         String result = (averagePrice >= 100000) ? "Expensive" : 
+                         (averagePrice >= 50000 && averagePrice <= 99999) ? "Normal" :
+                         "Cheap";
+
+        //Style2
+        // String result = (averagePrice >= 100000) ? "Expensive" : 
+        //                 (averagePrice >= 50000 && averagePrice <= 99999) ? "Normal" :
+        //                 (averagePrice <= 49999) ?"Cheap":
+        //                 "unknown price range";
         System.out.println("The car is " + result);
      }
 
