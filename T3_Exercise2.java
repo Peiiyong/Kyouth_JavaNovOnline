@@ -67,11 +67,21 @@ public class T3_Exercise2 {
         }
 
         System.out.println("\nVIP Car:");
-        for(int i=0;i<aboveCounter;i++){
-            System.out.print("Car " +(i+1)+" :");
-            System.out.println(above[i][0]+", "+above[i][1]+", "+above[i][2]+", "+above[i][3]);
+            for(int i=0;i<aboveCounter;i++){
+                System.out.print("Car " +(i+1)+" :");
+                System.out.println(above[i][0]+", "+above[i][1]+", "+above[i][2]+", "+above[i][3]);
         }
 
+        //Style2
+        /* for(String [] row: above){//一行一行
+            if(row[0]!=null){//第一行不是null
+                for(String cell:row){//print 排（data）
+                    System.out.print(cell + " ");
+                }
+            }
+            System.out.println();
+        }
+ */
         System.out.println("\nCheap Car:");
         for(int i=0;i<belowCounter;i++){
             System.out.print("Car " +(i+1)+" :");
