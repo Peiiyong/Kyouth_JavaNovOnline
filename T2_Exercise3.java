@@ -5,6 +5,7 @@ public class T2_Exercise3 {
      */
     public static void main(String[] args) {
         for (int i = 0; i < 50; i++) {
+        // for(int i =0;;i++)
             if (i==26) {
                 break;
             }else if (i==14) {
