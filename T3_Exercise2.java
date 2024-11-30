@@ -77,5 +77,6 @@ public class T3_Exercise2 {
             System.out.print("Car " +(i+1)+" :");
             System.out.println(below[i][0]+", "+below[i][1]+", "+below[i][2]+", "+below[i][3]);
         }
+    sc.close();
     }
 }
