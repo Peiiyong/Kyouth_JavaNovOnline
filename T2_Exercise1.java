@@ -31,10 +31,11 @@ public class T2_Exercise1 {
             System.out.println("Enter the price of car " + (i+1) + ":");
             double price = sc.nextDouble();
             
-            totalprice+=price;
+            T2_Exercise1 car = new T2_Exercise1(model, make, price);
+            totalprice+= car.price;
         }
-        
-        double average = totalprice/3;
+
+        double average = totalprice/num;
         System.out.println("The average price is " + average);
       }
 }
