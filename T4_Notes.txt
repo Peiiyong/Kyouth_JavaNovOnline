@@ -1,2 +1,5 @@
 1. switch(x) 
     Exercise1
+    Exercise2
+2.Encapsualtion(Getter, Setter)
+    Exercise3

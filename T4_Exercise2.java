@@ -6,7 +6,7 @@ import java.util.Scanner;
  * The result of the user must be shown regardless of the option.
  */
 public class T4_Exercise2 {
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         String matrix1[][] = new String[3][4];
         String matrix2[][] = new String[2][3];
 
@@ -56,47 +56,48 @@ public class T4_Exercise2 {
         }
         sc.close();
     }
-
-/*   public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+*/
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Input:");
-        int num=sc.nextInt();
+        int num = sc.nextInt();
 
-        switch(num){
+        switch (num) {
             case 1:
-                int[][]matrix1 = new int[3][4];
-                input(matrix1, sc);
-
-                System.out.println("=========Display Output==========");
-                display(matrix1);
+                int[][] matrix1 = new int[3][4];
+                input(matrix1, sc); // Populate the matrix
+                System.out.println("========= Display Output ==========");
+                display(matrix1); // Display the matrix
                 break;
             case 2:
-                int[][]matrix2 = new int[2][3];
-                input(matrix2, sc);
-
-                System.out.println("=========Display Output==========");
-                display(matrix2);
-                break;   
+                int[][] matrix2 = new int[2][3];
+                input(matrix2, sc); // Populate the matrix
+                System.out.println("========= Display Output ==========");
+                display(matrix2); // Display the matrix
+                break;
             default:
-                System.out.println("Invalid Input"); 
+                System.out.println("Invalid Input");
         }
+        sc.close(); // Close the scanner
+    }
 
-        public static void display(int [][]matrix){
-            for(int []row:matrix){
-                for(int value:row){
-                    System.out.print(value +" ");
-                }
-                System.out.println();
+    // Method to display a matrix
+    public static void display(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Method to populate a matrix with user input
+    public static void input(int[][] matrix, Scanner sc) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print("Enter value for matrix[" + i + "][" + j + "]: ");
+                matrix[i][j] = sc.nextInt();
             }
         }
-
-        public static void input(int[][] matrix, Scanner sc) {
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[i].length; j++) {
-                    System.out.print("Enter value for matrix[" + i + "][" + j + "]: ");
-                    matrix[i][j] = sc.nextInt();
-                }
-            }
-        }
-    }*/
+    }
 }
