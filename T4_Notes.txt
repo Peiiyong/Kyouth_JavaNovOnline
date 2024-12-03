@@ -4,3 +4,4 @@
 2.Encapsualtion(private，protected和public)
     - 封装是一种信息隐藏技术
     Exercise3(Getter, Setter)
+3. 

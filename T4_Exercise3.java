@@ -44,7 +44,7 @@ public class T4_Exercise3 {
     }
 
     public void setHeight(double height){
-        this.height=height;
+            this.height=height;
     }
 
     public void setWeight(double weight){
@@ -52,7 +52,7 @@ public class T4_Exercise3 {
     }
 
     public double calBMI(double height, double weight){
-        return (height-100)/weight;
+        return weight / (height * height);
     }
 
      public static void main(String[]args){
@@ -65,15 +65,20 @@ public class T4_Exercise3 {
         System.out.print("Enter age:");
         int age=sc.nextInt();
         person.setAge(age);
-        System.out.print("Enter height(in cm):");
+        System.out.print("Enter height(in m):");
         double height=sc.nextDouble();
-        person.setHeight(height);
-        System.out.print("Enter weight:");
-        double weight=sc.nextDouble();
-        person.setWeight(weight);
-        double bmi = person.calBMI(height, weight);
 
-        System.out.println("The person name is "+person.getName()+" and he/she is "+person.getAge()+
-        " years old and his/her bmi is " +bmi);
+        if(height<3){
+            person.setHeight(height);
+            System.out.print("Enter weight:");
+            double weight=sc.nextDouble();
+            person.setWeight(weight);
+            double bmi = person.calBMI(height, weight);
+    
+            System.out.println("The person name is "+person.getName()+" and he/she is "+person.getAge()+
+            " years old and his/her bmi is " +bmi);
+        }else{
+            System.out.println("Invalid. Height should be enter in m");
+        }
      }
 }
