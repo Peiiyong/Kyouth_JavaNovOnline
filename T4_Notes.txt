@@ -4,4 +4,13 @@
 2.Encapsualtion(private，protected和public)
     - 封装是一种信息隐藏技术
     Exercise3(Getter, Setter)
-3. 
+3. TryCatch
+    - ArrayIndexOutOfBoundsException 
+    - 
+    try{
+        //如果无错误
+    }catch(){
+        //如果有错误
+    }finally{
+        //一定会执行
+    }
