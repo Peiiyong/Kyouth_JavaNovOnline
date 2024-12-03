@@ -45,3 +45,27 @@ ssh key:
 1. 使用 SSH 密钥后，每次与 GitHub 交互（如 git pull 或 git push），
    您不需要输入用户名和密码，而是通过私钥验证身份。这使得操作更加高效。
 2. SSH 使用加密协议确保数据在传输过程中的安全性，防止中间人攻击和数据泄露。
+
+7. if cannot upload , try this:
+    1. extension: GitHub pull request
+    2. press (Winds+E)
+    3. find the file
+    4. view- show - hidden items
+    5. remove git file
+    6. vs code:
+        clear
+        git init
+        git remote add origin (https)
+        git branch -M main
+        git add .
+        git commit -m "update"
+        git push -u origin main
+
+8 if 7 got error, create a new repository:
+    1. remove the git file that exit in file
+    2.  git init
+        git remote add origin (https)
+        git branch -M main
+        git add .
+        git commit -m "update"
+        git push -u origin main
