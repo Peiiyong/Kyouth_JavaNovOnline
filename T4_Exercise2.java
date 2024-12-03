@@ -7,7 +7,6 @@ import java.util.Scanner;
  */
 public class T4_Exercise2 {
     public static void main(String[] args) {
-        String dayName;
         String matrix1[][] = new String[3][4];
         String matrix2[][] = new String[2][3];
 
@@ -17,7 +16,6 @@ public class T4_Exercise2 {
 
         switch(day){
             case 1:
-            dayName = "Monday";
             
             for(int i=0;i<matrix1.length;i++){
                 for(int j=0;j<matrix1[i].length;j++){ //matrix1[i].length 表示第 i 行有多少列
@@ -35,7 +33,6 @@ public class T4_Exercise2 {
             }
             break;
         case 2:
-            dayName = "Tuesday";
 
             for(int i=0;i<matrix2.length;i++){
                 for(int j=0;j<matrix2[i].length;j++){
@@ -53,24 +50,53 @@ public class T4_Exercise2 {
             }
 
             break;
-        case 3:
-            dayName = "Wednesday";
-            break;
-        case 4:
-            dayName = "Thursday";
-            break;
-        case 5:
-            dayName = "Friday";
-            break;
-        case 7:
-            dayName = "Saturday";
-            break;
         default:
-            dayName = "Invalid Day";
+            System.out.println("Invalid input!");
             break;
         }
-
-        System.out.println("Day of the week : " + dayName);
         sc.close();
     }
+
+/*   public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Input:");
+        int num=sc.nextInt();
+
+        switch(num){
+            case 1:
+                int[][]matrix1 = new int[3][4];
+                input(matrix1, sc);
+
+                System.out.println("=========Display Output==========");
+                display(matrix1);
+                break;
+            case 2:
+                int[][]matrix2 = new int[2][3];
+                input(matrix2, sc);
+
+                System.out.println("=========Display Output==========");
+                display(matrix2);
+                break;   
+            default:
+                System.out.println("Invalid Input"); 
+        }
+
+        public static void display(int [][]matrix){
+            for(int []row:matrix){
+                for(int value:row){
+                    System.out.print(value +" ");
+                }
+                System.out.println();
+            }
+        }
+
+        public static void input(int[][] matrix, Scanner sc) {
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
+                    System.out.print("Enter value for matrix[" + i + "][" + j + "]: ");
+                    matrix[i][j] = sc.nextInt();
+                }
+            }
+        }
+    }*/
 }
