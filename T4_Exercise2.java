@@ -59,26 +59,26 @@ public class T4_Exercise2 {
 */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input:");
+        System.out.print("Input:");
         int num = sc.nextInt();
 
         switch (num) {
             case 1:
                 int[][] matrix1 = new int[3][4];
-                input(matrix1, sc); // Populate the matrix
+                input(matrix1, sc); 
                 System.out.println("========= Display Output ==========");
-                display(matrix1); // Display the matrix
+                display(matrix1); 
                 break;
             case 2:
                 int[][] matrix2 = new int[2][3];
-                input(matrix2, sc); // Populate the matrix
+                input(matrix2, sc); 
                 System.out.println("========= Display Output ==========");
-                display(matrix2); // Display the matrix
+                display(matrix2); 
                 break;
             default:
                 System.out.println("Invalid Input");
         }
-        sc.close(); // Close the scanner
+        sc.close(); 
     }
 
     // Method to display a matrix
@@ -92,7 +92,7 @@ public class T4_Exercise2 {
     }
 
     // Method to populate a matrix with user input
-    public static void input(int[][] matrix, Scanner sc) {
+    public static void input(int[][] matrix, Scanner sc) {//input =1, matrix=34
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print("Enter value for matrix[" + i + "][" + j + "]: ");
