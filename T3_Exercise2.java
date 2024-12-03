@@ -74,7 +74,7 @@ public class T3_Exercise2 {
 
         //Style2
         /* for(String [] row: above){//一行一行
-            if(row[0]!=null){//第一行不是null
+            if(row[0]!=null){// [row][0] 不是null
                 for(String cell:row){//print 排（data）
                     System.out.print(cell + " ");
                 }

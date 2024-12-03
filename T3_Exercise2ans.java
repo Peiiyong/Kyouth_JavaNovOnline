@@ -33,13 +33,14 @@ public class T3_Exercise2ans {
 
 
         System.out.println("VIP Cars:");
+        boolean hasVipCars = false;
         // is is same as int []i :arr
         /* for (int i = 0; i < vipCars.length; i++) {
             String[] row = vipCars[i];
         } */
         for (String[] row : vipCars) { //一行一行
             if (row[0] != null) { //第一行不是0
-
+                hasVipCars = true;
                 /* for (int j = 0; j < row.length; j++) {
                     String cell = row[j];
                     System.out.print(cell + " ");
@@ -49,6 +50,9 @@ public class T3_Exercise2ans {
                 }
                 System.out.println();
             }
+        }
+        if (!hasVipCars) {
+            System.out.println("No vip cars available.");
         }
 
 
