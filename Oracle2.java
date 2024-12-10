@@ -20,7 +20,7 @@ class Customer{
 
 }
 
-public class T7_Exercise4 {
+public class Oracle2 {
     /*
      * Switch case:
      * 1. Add String property size to the Customer class:

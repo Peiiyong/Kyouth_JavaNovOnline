@@ -4,7 +4,7 @@ class Clothing{
     String size;
 }
 
-public class T6_Exercise1 {
+public class Oracle1 {
    public static void main(String[] args) {
 
     double tax =0.2;
