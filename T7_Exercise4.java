@@ -2,12 +2,16 @@ class Customer{
     String size;
     String name;
 
-    Customer(String name){
-        this.name=name;
+    public String getName(){
+        return name;
     }
 
     public String getSize(){
         return size;
+    }
+
+    public void setName(String name){
+        this.name=name;
     }
 
     public void setSize(String size){
@@ -30,26 +34,28 @@ public class T7_Exercise4 {
     5. Add the switch statement that derives customer size based on a measurement value.
      */
     public static void main(String[] args) {
-        Customer c1 = new Customer("Pinky");
+        Customer c1 = new Customer();
+        c1.setName("Pinky");
         c1.setSize("S");
         int measure =3;
 
         switch(measure){
-            case 1:
+            case 1,2,3:
                 c1.setSize("XS");
                 break;
-            case 2:
+            case 4,5,6:
                 c1.setSize("S");
                 break;
-            case 3:
+            case 7:
                 c1.setSize("M");
                 break;
-            case 4:
+            case 8:
                 c1.setSize("L");
                 break;
             default:
                 System.out.println("Invalid");
         }  
-        System.out.println("The size of Pinky is:"+c1.getSize());
+        System.out.println("Name:"+c1.getName());
+        System.out.println("Size:"+c1.getSize());
     }
 }
