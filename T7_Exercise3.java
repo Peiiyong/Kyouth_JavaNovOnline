@@ -11,6 +11,15 @@ interface Car{
     } interface要用完全部
 } */ 
 
+class Toyota implements Car{
+    public void price(){
+        System.out.println("The price of the car is: RM 25,000");
+    }
+    public void message(){
+        System.out.println("");
+    }
+}  
+
 class BMW implements Car{
     public void price(){
         System.out.println("The price of the car is: RM 85,000");
@@ -44,6 +53,7 @@ public class T7_Exercise3 {
 
         Car car1 = new Tesla();
         Car car2 = new BMW();
+        Car car3 = new Toyota();
 
         if(name.equals("BMW")){
             car2.price();
@@ -51,6 +61,9 @@ public class T7_Exercise3 {
         }else if(name.equals("Tesla")){
             car1.price();
             car1.message();
+        }else if(name.equals("Toyota")){
+            car3.price();
+            car3.message();
         }else{
             System.out.println("Undefined");
         }
