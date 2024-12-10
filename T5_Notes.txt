@@ -1,0 +1,4 @@
+1. https://mylearn.oracle.com/ou/home
+
+2. oracle clound
+3. tiger vnc (virtual environment)

@@ -35,7 +35,8 @@ public class T4_Exercise4 {
                 break;
             case 2:
 
-                for(int i=-1;i<matrix2.length;i++){  //or (i-- && j--) or (i<=matrix2.length) or j<matrix2[j].length or matrix2[2][0]
+                for(int i=-1;i<matrix2.length;i++){  
+                //or (i-- && j--) or (i<=matrix2.length) or j<matrix2[j].length or matrix2[2][0]
                     for(int j=0;j<matrix2[i].length;j++){ 
                     System.out.print("Enter a 2*3 matrix [" + i +"]["+j+"] :");
                         matrix2[i][j] = sc.next() + sc.nextLine(); 

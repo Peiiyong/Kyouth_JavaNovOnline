@@ -1,0 +1,19 @@
+OOP
+
+Principle of OOP
+1. abstraction (behavior)
+2. inherittance (super class and sub class)
+3. encapsulation (getter and setter)
+4. polymorphirsm (many dif object share same behavior)
+
+Netbeans
+
+
+Variable type(default value):
+String: null
+int=0;
+double=0.0;
+boolean:false
+
+*int i =10_000 (print 10000)
+*String 1fistlame is not allowed(starting from number)
