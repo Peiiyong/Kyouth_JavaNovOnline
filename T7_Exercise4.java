@@ -7,7 +7,7 @@ class Customer{
     }
 
     public String getSize(){
-        return name;
+        return size;
     }
 
     public void setSize(String size){
@@ -50,6 +50,6 @@ public class T7_Exercise4 {
             default:
                 System.out.println("Invalid");
         }  
-        System.out.println("The size of Pinky is:"+c1.size);
+        System.out.println("The size of Pinky is:"+c1.getSize());
     }
 }
