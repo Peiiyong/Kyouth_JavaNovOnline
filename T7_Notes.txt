@@ -1,0 +1,8 @@
+1. Poly(extends)
+    E1
+2. Abstract (extends)
+    E2
+3. Interface (implements)
+    子类要用完interface里所有的method
+    E3
+4. 
