@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
-class Car{
-    void price(){
-        System.out.println("The price of the car is: ");
+abstract class Car{
+    abstract void price();
+
+    void description(){
+        System.out.println("Discover the Thrill of Driving");
     }
 }
 
@@ -24,13 +26,10 @@ class Tesla extends Car{
     }
 }
 
-public class T7_Exercise1 {
+public class T7_Exercise2 {
     /*
-     * Make a run-time polymorphism, has 3 extends for the cars. 
-     * The user is supposed to enter the car name in the terminal and this is going to be output: 
-     * if the user enters Toyota, the output should be 25,000RM 
-     * if the user enters BMW, the output should be 85,000RM 
-     * if the user enters Tesla, the output should be 75,000RM
+     * Same as the excercise 10 but this time instead of polymorphism, use the abstract 
+     * and there should be a business slogan on top of the price for each car
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -42,10 +41,13 @@ public class T7_Exercise1 {
         Car car3 = new BMW();
 
         if(name.equals("Toyota")){
+            car2.description();
             car2.price();
         }else if (name.equals("BMW")){
+            car3.description();
             car3.price();
         }else if(name.equals("Tesla")){
+            car1.description();
             car1.price();
         }else{
             System.out.println("Undefined");
