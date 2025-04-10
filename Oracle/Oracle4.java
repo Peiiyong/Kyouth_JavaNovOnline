@@ -106,4 +106,3 @@ Place this code inside the loop, before the total value calculation.
 
    } 
 }
-

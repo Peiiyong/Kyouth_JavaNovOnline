@@ -16,4 +16,3 @@ public class T2_Exercise3 {
         }
     }
 }
-
