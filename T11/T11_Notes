@@ -1,0 +1,25 @@
+1.create branch(colaborator)
+    git branch -M "PY"
+    git add .
+    git commit -m "from py"
+    git push -u origin PY
+
+2. get the lastest coding
+    git pull
+
+3. know which branch u at
+    git branch
+
+4. merge the branch with main (Github)
+    new pull request 
+    select the branch u want to merge
+    create pull request x2
+    delete branch 
+
+5. return to main?
+    git checkout main 
+
+6. do project (GroupCJava): https://github.com/yt02/GroupCJava
+
+7. delete branch   
+    git push origin --delete leave(branch name)
