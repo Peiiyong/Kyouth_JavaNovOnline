@@ -31,5 +31,3 @@ public class T7_Abstract {
         shape2.description();
     }
 }
-
-

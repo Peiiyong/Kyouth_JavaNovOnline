@@ -1,5 +1,5 @@
 package T7;
-// Compile-time Polymorphoisim
+// Compile-time Polymorphoisim (Method Overloading)
 
 class Calculator {
 
@@ -12,7 +12,7 @@ class Calculator {
     }
 }
 
-//Run-time Polymorphism
+//Run-time Polymorphism (Method Overriding)
 
 class Animal {
     void sound() {
