@@ -1,0 +1,4 @@
+apple: 8
+banana: 6
+orange: 4
+grape: 2

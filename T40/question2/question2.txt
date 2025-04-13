@@ -1,0 +1,28 @@
+ Create a Java program to simulate a restaurant management system. The system should
+ have the following classes:
+ 1. MenuItem: This class should represent a menu item with properties like name, price,
+ and category (e.g., appetizer, main course, dessert).
+ 2. Order: This class should represent a customer’s order, including a list of menu items
+ and the total cost.
+ 3. Waiter: This class should represent a waiter who can take orders, process payments,
+ and deliver food.
+ 4. Kitchen: This class should simulate the kitchen, receiving orders from waiters, prepar
+ing food, and notifying waiters when orders are ready.
+ Tasks
+ 1. Create Menu: Implement the MenuItem class and create a menu with various items,
+ categorized as appetizers, main courses, and desserts.
+ 2. Take Orders: The Waiter class should allow customers to order items from the menu.
+ 3. Process Orders: The Waiter should send orders to the Kitchen class.
+ 4. Prepare Food: The Kitchen class should simulate food preparation time and notify
+ the Waiter when an order is ready.
+ 5. Deliver Orders: The Waiter should deliver the prepared food to the customer.
+ 6. Calculate Bill: The Waiter should calculate the total bill for the customer’s order,
+ including taxes and any discounts.
+ Optional:
+ 1. Error Handling: Implement error handling for situations like out-of-stock items or
+ invalid orders.
+ 2. User Interface: Create a simple text-based user interface to interact with the system.
+ 3. Data Structures: Use appropriate data structures like ArrayLists or HashMaps to store
+ menu items, orders, and customer information.
+ 4. Concurrency: Consider using threads to simulate concurrent order processing and food
+ preparation.
