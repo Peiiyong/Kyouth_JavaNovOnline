@@ -73,6 +73,6 @@ import java.util.regex.*;
             System.out.println("No email addresses found in the string.");
         }
 
-        input.close(); // Close the scanner to prevent resource leaks
+        input.close(); 
     }
  }
